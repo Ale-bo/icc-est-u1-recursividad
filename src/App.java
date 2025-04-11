@@ -8,7 +8,11 @@ public class App {
         int fibo=e.fibonacci(5);
         System.out.println("La respuesta es "+ fibo);
 
+        int p = e.getpotencia(2,3);
+        System.out.println("2^3 = " + p);	
 
+        int s = e.sumaDigitos(9);
+        System.out.println("La suma de los digitos es " + s);
 
 
     } 
