@@ -14,6 +14,10 @@ public class App {
         int s = e.sumaDigitos(9);
         System.out.println("La suma de los digitos es " + s);
 
+        e.printNumbers(5);
+        System.out.println();
+
+        System.out.println(e.reverso(1234));
 
     } 
 }

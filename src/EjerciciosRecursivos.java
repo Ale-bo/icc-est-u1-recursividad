@@ -55,5 +55,31 @@ public class EjerciciosRecursivos {
         int digitos = numero / 10;
         return digitos + sumaDigitos(resto);
     }
+
+/* 
+ * Escribe un metodo recursivo que imprima los numeros desde n hasta 1 de forma 
+ * desendenyente, separados por espacios.
+ */
+
+    public void printNumbers(int n) {
+        if (n > 0) {
+            System.out.print(n + " ");
+            printNumbers(n - 1);
+        }
+    }
+ /*
+  * Crea una funcion recursiva llamada reverso que reciba un numero 
+  entero positivo n  y devuelva su numero invertido. Por ejemplo, si
+  recibe 1234, la funcion debe devolver 4321.
+  */
+
+    public int reverso(int n) {
+         return reversa(n, 0);
+    }
+
+    private int reversa(int n, int resultado) {
+        if (n == 0) return resultado;
+        return reversa(n / 10, resultado * 10 +n % 10);
+    }
     
 }
